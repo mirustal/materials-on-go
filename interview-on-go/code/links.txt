@@ -1,0 +1,16 @@
+https://balun-team.yonote.ru/share/73f2ab3b-d37f-4454-9c8f-17eabdf81795/doc/dopolnitelnye-materialy-OJieCMXBFq
+https://github.com/Balun-courses/interview_go/tree/main/data_types
+https://github.com/Balun-courses/interview_go/tree/main/arrays_and_slices
+https://github.com/Balun-courses/interview_go/tree/main/strings
+https://github.com/Balun-courses/interview_go/tree/main/maps
+https://github.com/Balun-courses/interview_go/tree/main/structs
+https://github.com/Balun-courses/interview_go/tree/main/interfaces
+https://github.com/Balun-courses/interview_go/tree/main/defer
+https://github.com/Balun-courses/interview_go/tree/main/errors
+https://github.com/Balun-courses/interview_go/tree/main/allocator
+https://github.com/Balun-courses/interview_go/tree/main/garbage_collector
+https://github.com/Balun-courses/interview_go/tree/main/goroutines_and_scheduler
+https://github.com/Balun-courses/interview_go/tree/main/concurrency_sync_primitives
+https://github.com/Balun-courses/interview_go/tree/main/concurrency_channels
+https://github.com/Balun-courses/interview_go/tree/main/concurrency_contexts
+https://github.com/Balun-courses/interview_go/tree/main/concurrency_patterns

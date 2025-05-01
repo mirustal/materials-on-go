@@ -1,0 +1,695 @@
+<html><head><meta http-equiv="Content-Type" content="text/html; charset=utf-8"/><title>Яндекс</title><style>
+/* cspell:disable-file */
+/* webkit printing magic: print all background colors */
+html {
+	-webkit-print-color-adjust: exact;
+}
+* {
+	box-sizing: border-box;
+	-webkit-print-color-adjust: exact;
+}
+
+html,
+body {
+	margin: 0;
+	padding: 0;
+}
+@media only screen {
+	body {
+		margin: 2em auto;
+		max-width: 900px;
+		color: rgb(55, 53, 47);
+	}
+}
+
+body {
+	line-height: 1.5;
+	white-space: pre-wrap;
+}
+
+a,
+a.visited {
+	color: inherit;
+	text-decoration: underline;
+}
+
+.pdf-relative-link-path {
+	font-size: 80%;
+	color: #444;
+}
+
+h1,
+h2,
+h3 {
+	letter-spacing: -0.01em;
+	line-height: 1.2;
+	font-weight: 600;
+	margin-bottom: 0;
+}
+
+.page-title {
+	font-size: 2.5rem;
+	font-weight: 700;
+	margin-top: 0;
+	margin-bottom: 0.75em;
+}
+
+h1 {
+	font-size: 1.875rem;
+	margin-top: 1.875rem;
+}
+
+h2 {
+	font-size: 1.5rem;
+	margin-top: 1.5rem;
+}
+
+h3 {
+	font-size: 1.25rem;
+	margin-top: 1.25rem;
+}
+
+.source {
+	border: 1px solid #ddd;
+	border-radius: 3px;
+	padding: 1.5em;
+	word-break: break-all;
+}
+
+.callout {
+	border-radius: 3px;
+	padding: 1rem;
+}
+
+figure {
+	margin: 1.25em 0;
+	page-break-inside: avoid;
+}
+
+figcaption {
+	opacity: 0.5;
+	font-size: 85%;
+	margin-top: 0.5em;
+}
+
+mark {
+	background-color: transparent;
+}
+
+.indented {
+	padding-left: 1.5em;
+}
+
+hr {
+	background: transparent;
+	display: block;
+	width: 100%;
+	height: 1px;
+	visibility: visible;
+	border: none;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.09);
+}
+
+img {
+	max-width: 100%;
+}
+
+@media only print {
+	img {
+		max-height: 100vh;
+		object-fit: contain;
+	}
+}
+
+@page {
+	margin: 1in;
+}
+
+.collection-content {
+	font-size: 0.875rem;
+}
+
+.column-list {
+	display: flex;
+	justify-content: space-between;
+}
+
+.column {
+	padding: 0 1em;
+}
+
+.column:first-child {
+	padding-left: 0;
+}
+
+.column:last-child {
+	padding-right: 0;
+}
+
+.table_of_contents-item {
+	display: block;
+	font-size: 0.875rem;
+	line-height: 1.3;
+	padding: 0.125rem;
+}
+
+.table_of_contents-indent-1 {
+	margin-left: 1.5rem;
+}
+
+.table_of_contents-indent-2 {
+	margin-left: 3rem;
+}
+
+.table_of_contents-indent-3 {
+	margin-left: 4.5rem;
+}
+
+.table_of_contents-link {
+	text-decoration: none;
+	opacity: 0.7;
+	border-bottom: 1px solid rgba(55, 53, 47, 0.18);
+}
+
+table,
+th,
+td {
+	border: 1px solid rgba(55, 53, 47, 0.09);
+	border-collapse: collapse;
+}
+
+table {
+	border-left: none;
+	border-right: none;
+}
+
+th,
+td {
+	font-weight: normal;
+	padding: 0.25em 0.5em;
+	line-height: 1.5;
+	min-height: 1.5em;
+	text-align: left;
+}
+
+th {
+	color: rgba(55, 53, 47, 0.6);
+}
+
+ol,
+ul {
+	margin: 0;
+	margin-block-start: 0.6em;
+	margin-block-end: 0.6em;
+}
+
+li > ol:first-child,
+li > ul:first-child {
+	margin-block-start: 0.6em;
+}
+
+ul > li {
+	list-style: disc;
+}
+
+ul.to-do-list {
+	padding-inline-start: 0;
+}
+
+ul.to-do-list > li {
+	list-style: none;
+}
+
+.to-do-children-checked {
+	text-decoration: line-through;
+	opacity: 0.375;
+}
+
+ul.toggle > li {
+	list-style: none;
+}
+
+ul {
+	padding-inline-start: 1.7em;
+}
+
+ul > li {
+	padding-left: 0.1em;
+}
+
+ol {
+	padding-inline-start: 1.6em;
+}
+
+ol > li {
+	padding-left: 0.2em;
+}
+
+.mono ol {
+	padding-inline-start: 2em;
+}
+
+.mono ol > li {
+	text-indent: -0.4em;
+}
+
+.toggle {
+	padding-inline-start: 0em;
+	list-style-type: none;
+}
+
+/* Indent toggle children */
+.toggle > li > details {
+	padding-left: 1.7em;
+}
+
+.toggle > li > details > summary {
+	margin-left: -1.1em;
+}
+
+.selected-value {
+	display: inline-block;
+	padding: 0 0.5em;
+	background: rgba(206, 205, 202, 0.5);
+	border-radius: 3px;
+	margin-right: 0.5em;
+	margin-top: 0.3em;
+	margin-bottom: 0.3em;
+	white-space: nowrap;
+}
+
+.collection-title {
+	display: inline-block;
+	margin-right: 1em;
+}
+
+.page-description {
+    margin-bottom: 2em;
+}
+
+.simple-table {
+	margin-top: 1em;
+	font-size: 0.875rem;
+	empty-cells: show;
+}
+.simple-table td {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table th {
+	height: 29px;
+	min-width: 120px;
+}
+
+.simple-table-header-color {
+	background: rgb(247, 246, 243);
+	color: black;
+}
+.simple-table-header {
+	font-weight: 500;
+}
+
+time {
+	opacity: 0.5;
+}
+
+.icon {
+	display: inline-block;
+	max-width: 1.2em;
+	max-height: 1.2em;
+	text-decoration: none;
+	vertical-align: text-bottom;
+	margin-right: 0.5em;
+}
+
+img.icon {
+	border-radius: 3px;
+}
+
+.user-icon {
+	width: 1.5em;
+	height: 1.5em;
+	border-radius: 100%;
+	margin-right: 0.5rem;
+}
+
+.user-icon-inner {
+	font-size: 0.8em;
+}
+
+.text-icon {
+	border: 1px solid #000;
+	text-align: center;
+}
+
+.page-cover-image {
+	display: block;
+	object-fit: cover;
+	width: 100%;
+	max-height: 30vh;
+}
+
+.page-header-icon {
+	font-size: 3rem;
+	margin-bottom: 1rem;
+}
+
+.page-header-icon-with-cover {
+	margin-top: -0.72em;
+	margin-left: 0.07em;
+}
+
+.page-header-icon img {
+	border-radius: 3px;
+}
+
+.link-to-page {
+	margin: 1em 0;
+	padding: 0;
+	border: none;
+	font-weight: 500;
+}
+
+p > .user {
+	opacity: 0.5;
+}
+
+td > .user,
+td > time {
+	white-space: nowrap;
+}
+
+input[type="checkbox"] {
+	transform: scale(1.5);
+	margin-right: 0.6em;
+	vertical-align: middle;
+}
+
+p {
+	margin-top: 0.5em;
+	margin-bottom: 0.5em;
+}
+
+.image {
+	border: none;
+	margin: 1.5em 0;
+	padding: 0;
+	border-radius: 0;
+	text-align: center;
+}
+
+.code,
+code {
+	background: rgba(135, 131, 120, 0.15);
+	border-radius: 3px;
+	padding: 0.2em 0.4em;
+	border-radius: 3px;
+	font-size: 85%;
+	tab-size: 2;
+}
+
+code {
+	color: #eb5757;
+}
+
+.code {
+	padding: 1.5em 1em;
+}
+
+.code-wrap {
+	white-space: pre-wrap;
+	word-break: break-all;
+}
+
+.code > code {
+	background: none;
+	padding: 0;
+	font-size: 100%;
+	color: inherit;
+}
+
+blockquote {
+	font-size: 1.25em;
+	margin: 1em 0;
+	padding-left: 1em;
+	border-left: 3px solid rgb(55, 53, 47);
+}
+
+.bookmark {
+	text-decoration: none;
+	max-height: 8em;
+	padding: 0;
+	display: flex;
+	width: 100%;
+	align-items: stretch;
+}
+
+.bookmark-title {
+	font-size: 0.85em;
+	overflow: hidden;
+	text-overflow: ellipsis;
+	height: 1.75em;
+	white-space: nowrap;
+}
+
+.bookmark-text {
+	display: flex;
+	flex-direction: column;
+}
+
+.bookmark-info {
+	flex: 4 1 180px;
+	padding: 12px 14px 14px;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+.bookmark-image {
+	width: 33%;
+	flex: 1 1 180px;
+	display: block;
+	position: relative;
+	object-fit: cover;
+	border-radius: 1px;
+}
+
+.bookmark-description {
+	color: rgba(55, 53, 47, 0.6);
+	font-size: 0.75em;
+	overflow: hidden;
+	max-height: 4.5em;
+	word-break: break-word;
+}
+
+.bookmark-href {
+	font-size: 0.75em;
+	margin-top: 0.25em;
+}
+
+.sans { font-family: ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol"; }
+.code { font-family: "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace; }
+.serif { font-family: Lyon-Text, Georgia, ui-serif, serif; }
+.mono { font-family: iawriter-mono, Nitti, Menlo, Courier, monospace; }
+.pdf .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK JP'; }
+.pdf:lang(zh-CN) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK SC'; }
+.pdf:lang(zh-TW) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK TC'; }
+.pdf:lang(ko-KR) .sans { font-family: Inter, ui-sans-serif, -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, "Apple Color Emoji", Arial, sans-serif, "Segoe UI Emoji", "Segoe UI Symbol", 'Twemoji', 'Noto Color Emoji', 'Noto Sans CJK KR'; }
+.pdf .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .code { font-family: Source Code Pro, "SFMono-Regular", Menlo, Consolas, "PT Mono", "Liberation Mono", Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.pdf .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK JP'; }
+.pdf:lang(zh-CN) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK SC'; }
+.pdf:lang(zh-TW) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK TC'; }
+.pdf:lang(ko-KR) .serif { font-family: PT Serif, Lyon-Text, Georgia, ui-serif, serif, 'Twemoji', 'Noto Color Emoji', 'Noto Serif CJK KR'; }
+.pdf .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK JP'; }
+.pdf:lang(zh-CN) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK SC'; }
+.pdf:lang(zh-TW) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK TC'; }
+.pdf:lang(ko-KR) .mono { font-family: PT Mono, iawriter-mono, Nitti, Menlo, Courier, monospace, 'Twemoji', 'Noto Color Emoji', 'Noto Sans Mono CJK KR'; }
+.highlight-default {
+	color: rgba(55, 53, 47, 1);
+}
+.highlight-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.highlight-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.highlight-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.highlight-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.highlight-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.highlight-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.highlight-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.highlight-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.highlight-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.highlight-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.highlight-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.highlight-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.highlight-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.highlight-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.highlight-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.highlight-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.highlight-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.highlight-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.block-color-default {
+	color: inherit;
+	fill: inherit;
+}
+.block-color-gray {
+	color: rgba(120, 119, 116, 1);
+	fill: rgba(120, 119, 116, 1);
+}
+.block-color-brown {
+	color: rgba(159, 107, 83, 1);
+	fill: rgba(159, 107, 83, 1);
+}
+.block-color-orange {
+	color: rgba(217, 115, 13, 1);
+	fill: rgba(217, 115, 13, 1);
+}
+.block-color-yellow {
+	color: rgba(203, 145, 47, 1);
+	fill: rgba(203, 145, 47, 1);
+}
+.block-color-teal {
+	color: rgba(68, 131, 97, 1);
+	fill: rgba(68, 131, 97, 1);
+}
+.block-color-blue {
+	color: rgba(51, 126, 169, 1);
+	fill: rgba(51, 126, 169, 1);
+}
+.block-color-purple {
+	color: rgba(144, 101, 176, 1);
+	fill: rgba(144, 101, 176, 1);
+}
+.block-color-pink {
+	color: rgba(193, 76, 138, 1);
+	fill: rgba(193, 76, 138, 1);
+}
+.block-color-red {
+	color: rgba(212, 76, 71, 1);
+	fill: rgba(212, 76, 71, 1);
+}
+.block-color-gray_background {
+	background: rgba(241, 241, 239, 1);
+}
+.block-color-brown_background {
+	background: rgba(244, 238, 238, 1);
+}
+.block-color-orange_background {
+	background: rgba(251, 236, 221, 1);
+}
+.block-color-yellow_background {
+	background: rgba(251, 243, 219, 1);
+}
+.block-color-teal_background {
+	background: rgba(237, 243, 236, 1);
+}
+.block-color-blue_background {
+	background: rgba(231, 243, 248, 1);
+}
+.block-color-purple_background {
+	background: rgba(244, 240, 247, 0.8);
+}
+.block-color-pink_background {
+	background: rgba(249, 238, 243, 0.8);
+}
+.block-color-red_background {
+	background: rgba(253, 235, 236, 1);
+}
+.select-value-color-uiBlue { background-color: rgba(35, 131, 226, .07); }
+.select-value-color-pink { background-color: rgba(245, 224, 233, 1); }
+.select-value-color-purple { background-color: rgba(232, 222, 238, 1); }
+.select-value-color-green { background-color: rgba(219, 237, 219, 1); }
+.select-value-color-gray { background-color: rgba(227, 226, 224, 1); }
+.select-value-color-translucentGray { background-color: rgba(255, 255, 255, 0.0375); }
+.select-value-color-orange { background-color: rgba(250, 222, 201, 1); }
+.select-value-color-brown { background-color: rgba(238, 224, 218, 1); }
+.select-value-color-red { background-color: rgba(255, 226, 221, 1); }
+.select-value-color-yellow { background-color: rgba(253, 236, 200, 1); }
+.select-value-color-blue { background-color: rgba(211, 229, 239, 1); }
+.select-value-color-pageGlass { background-color: undefined; }
+.select-value-color-washGlass { background-color: undefined; }
+
+.checkbox {
+	display: inline-flex;
+	vertical-align: text-bottom;
+	width: 16;
+	height: 16;
+	background-size: 16px;
+	margin-left: 2px;
+	margin-right: 5px;
+}
+
+.checkbox-on {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20width%3D%2216%22%20height%3D%2216%22%20fill%3D%22%2358A9D7%22%2F%3E%0A%3Cpath%20d%3D%22M6.71429%2012.2852L14%204.9995L12.7143%203.71436L6.71429%209.71378L3.28571%206.2831L2%207.57092L6.71429%2012.2852Z%22%20fill%3D%22white%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+
+.checkbox-off {
+	background-image: url("data:image/svg+xml;charset=UTF-8,%3Csvg%20width%3D%2216%22%20height%3D%2216%22%20viewBox%3D%220%200%2016%2016%22%20fill%3D%22none%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%3E%0A%3Crect%20x%3D%220.75%22%20y%3D%220.75%22%20width%3D%2214.5%22%20height%3D%2214.5%22%20fill%3D%22white%22%20stroke%3D%22%2336352F%22%20stroke-width%3D%221.5%22%2F%3E%0A%3C%2Fsvg%3E");
+}
+	
+</style></head><body><article id="4c475c4f-3548-4220-bf8f-f3aaef79bcc5" class="page sans"><header><h1 class="page-title">Яндекс</h1><p class="page-description"></p></header><div class="page-body"><p id="8119e0bc-2a9a-4e00-8411-99fb621cfb6c" class="">
+</p><p id="111030a9-d0a9-4831-ac0b-d09713358d33" class="">массив:</p><ul id="d8b7de42-c0cb-4ffe-9bbf-2adfc94cbf87" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/remove-element/"><strong>27. Remove Element</strong></a></mark><strong> </strong><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="09138001-f1c8-4d5b-a289-c2d2731fab74" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/majority-element/"><strong>169. Majority Element</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="b6d87156-7060-4722-bbb9-027868d85b46" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/candy/"><strong>135. Candy</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-red"><strong>#Hard</strong></mark></span><div class="indented"></div></li></ul><ul id="191f661a-bf54-4df4-b7f3-4636fe9e9695" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/product-of-array-except-self/"><strong>238. Product of Array Except Self</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium (префиксный массив)</strong></mark></span><div class="indented"></div></li></ul><ul id="154bac52-cc29-4bc7-a7fb-6233efd66242" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/subarray-sum-equals-k/"><strong>560. Subarray Sum Equals K</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium (префиксный массив)</strong></mark></span><div class="indented"></div></li></ul><p id="269a3ee4-29dc-4ba7-9fe7-99f6304f5128" class="">
+</p><p id="9bcb1b98-e979-443e-b60f-91f8e0721e4b" class="">2 указатель</p><ul id="67be0e8f-02df-496b-8a82-786ff0ced826" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/valid-palindrome/"><strong>125. Valid Palindrome</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="db2fb6ac-9203-45ef-a857-ac7cd3d28543" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/move-zeroes/"><strong>283. Move Zeroes</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="ac2413c8-adb7-4ba1-91db-6e4547aeaf13" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/trapping-rain-water/"><strong>42. Trapping Rain Water</strong></a></mark><strong> </strong><mark class="highlight-red"><strong>#Hard</strong></mark></span><div class="indented"></div></li></ul><ul id="1dc5046b-1595-41ff-9584-ba16d3ec3c54" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/valid-palindrome-ii/"><strong>680. Valid Palindrome II</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="6926df26-4da9-4573-be5d-7735e6064684" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/squares-of-a-sorted-array/"><strong>977. Squares of a Sorted Array</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="5bfe308f-fb1e-4d7d-b32b-d6ce44685b34" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked">Longest panagram…</span><div class="indented"></div></li></ul><p id="e28dcdce-d7c2-4a90-bfe0-cec726f0cb16" class="">
+</p><p id="1ab96d97-82a6-48e2-8b12-0eb5ec8cbca5" class="">Хеш-таблица</p><ul id="f01e7636-dc45-411c-9cf8-e8f0b805f1b2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><strong><mark class="highlight-blue"><a href="https://leetcode.com/problems/two-sum/">1. Two Sum</a></mark></strong></span><div class="indented"></div></li></ul><ul id="8b110928-9b92-4fce-8904-3153cf93d8f6" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/isomorphic-strings/"><strong>205. Isomorphic Strings</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="368ee8d3-2af2-4a60-9f52-1574df7b2a21" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/find-the-difference-of-two-arrays/"><strong>2215. Find the Difference of Two Arrays</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="7603ffbe-73eb-4eaa-b0db-a5a4548822e5" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/intersection-of-two-arrays-ii/"><strong>350. Intersection of Two Arrays II</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy (+ вариант с 2 указателями и сортировкой)</strong></mark></span><div class="indented"></div></li></ul><ul id="d8278e94-37a5-4d39-b8ab-51a4167b4d1c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/lru-cache/"><strong>146. LRU Cache</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="0227acdb-e702-4fb6-ae25-570a240ec2f3" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/partition-labels/"><strong>763. Partition Labels</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="9051a51d-cb4f-4bb8-91dd-76bb888040d5" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/find-the-prefix-common-array-of-two-arrays/"><strong>2657. Find the Prefix Common Array of Two Arrays</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium (bitmap)</strong></mark></span><div class="indented"></div></li></ul><p id="1a5eebfa-b017-4b0e-93b9-cc495080e4eb" class="">
+</p><p id="7953fb15-b94a-419e-b94b-ec46f2143d6c" class="">Длинная арифметика:</p><ul id="77936aa8-ce56-40e1-a2a6-30fa47bd7683" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/add-two-numbers/"><strong>2. Add Two Numbers</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium (связный список)</strong></mark></span><div class="indented"></div></li></ul><p id="ed1df67c-ecc5-4805-adb3-cc6732320c2c" class="">
+</p><p id="90efdd26-bcef-4739-b7bc-9003055bcd10" class="">Плавающее окно:</p><ul id="249b9b6e-4c2b-471e-9791-10f3d762e463" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/summary-ranges/"><strong>228. Summary Ranges</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="e428773a-2b32-49df-b112-1283fd66c22e" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/max-consecutive-ones/"><strong>485. Max Consecutive Ones</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="d02ed31a-def3-4f45-8c62-63bb7d564d77" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/longest-substring-without-repeating-characters/"><strong>3. Longest Substring Without Repeating Characters</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="254d0743-dbf1-4564-9af5-ec73db08abaa" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/maximize-distance-to-closest-person/"><strong>849. Maximize Distance to Closest Person</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="45211cb7-2e3a-403b-9f48-b73f1416e7cf" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/permutation-in-string/"><strong>567. Permutation in String</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="9dc06d1d-c94b-4429-953b-4fe31999ff5c" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/string-compression/"><strong>443. String Compression</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="7b6e51c0-f9f0-4195-acbf-1b9b038cc11d" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/minimum-window-substring/"><strong>76. Minimum Window Substring</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-red"><strong>#Hard</strong></mark></span><div class="indented"></div></li></ul><ul id="bafa1c96-9613-400b-ac56-1a0485b4431a" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/sliding-window-maximum/"><strong>239. Sliding Window Maximum</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-red"><strong>#Hard</strong></mark></span><div class="indented"></div></li></ul><p id="1dbf5031-7d46-4d99-9800-027caf670d57" class="">
+</p><p id="d947b050-3ed1-4052-8676-d5ae3f462fe8" class="">Стек:</p><ul id="c8be72b1-2250-4390-b974-1d9b5e7f6949" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/valid-parentheses/"><strong>20. Valid Parentheses</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="a6e206d1-4c32-4df1-8726-2fc548aca781" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/simplify-path/"><strong>71. Simplify Path</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="1db48208-4aad-499c-8e99-fa05ac36559e" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/evaluate-reverse-polish-notation/"><strong>150. Evaluate Reverse Polish Notation</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="e91d2fa6-271d-4a89-bcd1-f6b1b666174d" class="">
+</p><p id="d41aa3be-5f3e-4c5a-8167-214d6dadd1d3" class="">Сканирующая прямая</p><ul id="04711ee4-b7ad-4dec-85f8-a92fac5e9aa9" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/merge-intervals/"><strong>56. Merge Intervals</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="1fee4abd-63d0-4895-a94e-ab62b22d35b7" class="">
+</p><p id="a1b29811-8e21-4ff2-8cef-02e6da7a2b46" class="">Бинарный поиск:</p><ul id="69dd1fbb-56f8-4542-98a7-ef25131b9faf" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/search-in-rotated-sorted-array/"><strong>33. Search in Rotated Sorted Array</strong></a></mark><strong> </strong><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="c9b585a2-cbe5-4017-9283-a0c080456851" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/find-k-closest-elements/"><strong>658. Find K Closest Elements</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="78c0e901-5174-4b18-b017-87aa64798bfb" class="">
+</p><p id="2e855bcb-ecd8-4d09-ad2b-6509493dd4c3" class="">Бектрекинг</p><ul id="a3a13d54-0b69-4f91-8cb0-905a7662e0cc" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/restore-ip-addresses/"><strong>93. Restore IP Addresses</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="b49f67a9-0508-469f-867e-fa21ffa23ada" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/remove-invalid-parentheses/"><strong>301. Remove Invalid Parentheses</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-red"><strong>#Hard</strong></mark></span><div class="indented"></div></li></ul><p id="cca06267-e952-493b-a1e6-53c578ee1ac5" class="">
+</p><p id="7f73f1b1-876d-417b-9561-9f2c2c509e02" class="">Дерево</p><ul id="e46d2997-e1cd-4963-b25a-de34d0615e41" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/symmetric-tree/"><strong>101. Symmetric Tree</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="8c2cc1c1-f631-4633-96a4-3c2282a926f6" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/maximum-depth-of-binary-tree/"><strong>104. Maximum Depth of Binary Tree</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="b928d985-e623-4ac1-b56a-7399e999e501" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/binary-tree-maximum-path-sum/"><strong>124. Binary Tree Maximum Path Sum</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-red"><strong>#Hard</strong></mark></span><div class="indented"></div></li></ul><p id="b7279548-c1d2-4afc-b222-0ede0788ae34" class="">
+</p><p id="8fb11463-b7bf-4f3f-8a3d-c7348e7bcd92" class="">Дерево поиска</p><ul id="29308af3-1281-4252-9b48-6846f94602af" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/validate-binary-search-tree/"><strong>98. Validate Binary Search Tree</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="98aa41e2-4be5-4bf1-90d8-0fe19842effa" class="">
+</p><p id="0bfbfbb6-223e-45c8-972d-2e82fe1ed8b0" class="">Графы</p><ul id="aef61fbc-26cf-4770-a287-d171781f173f" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/robot-return-to-origin/"><strong>657. Robot Return to Origin</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy (почти графы)</strong></mark></span><div class="indented"></div></li></ul><ul id="dbbbf635-cb31-489d-9881-b599470c768f" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/number-of-islands/"><strong>200. Number of Islands</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="43bc6fcf-0692-440b-a3d0-401d9887646b" class="">
+</p><p id="d1e3b6cc-079e-430d-8898-16de3a5678d1" class="">ДП:</p><ul id="08d7fcfd-acf3-4d7d-87ed-47682084d9c2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/best-time-to-buy-and-sell-stock/"><strong>121. Best Time to Buy and Sell Stock</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="564ed46d-05a0-4fb0-8e5b-32e6e8201793" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/longest-increasing-subsequence/"><strong>300. Longest Increasing Subsequence</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium (+ бинарный поиск)</strong></mark></span><div class="indented"></div></li></ul><p id="545a1c9e-1a54-4023-9f5f-33d9c0aefed5" class="">
+</p><p id="903d932b-7e1f-4118-8599-bca55dc3038c" class="">Сount sort:</p><ul id="e009983d-6e7c-4ca4-99ce-86b777923879" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/valid-anagram/"><strong>242. Valid Anagram</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="bc9571c3-d68b-4ea5-b73c-0b5cb0201bce" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/find-all-anagrams-in-a-string/"><strong>438. Find All Anagrams in a String</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium (sliding window)</strong></mark></span><div class="indented"></div></li></ul><ul id="468c9829-c8a2-41c0-87a6-837075926e41" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/top-k-frequent-elements/"><strong>347. Top K Frequent Elements</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="bc4e235d-371a-405f-a99a-2c398be1c08e" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/top-k-frequent-words/"><strong>692. Top K Frequent Words</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="edf53a1f-18aa-4904-bb0c-51c15ed1453c" class="">
+</p><p id="ff8264bf-e38d-4071-8b91-3bc4d69f861e" class="">Linked list:</p><ul id="92c7e5c8-8b4a-44b7-8ecd-2f5dbc730ad2" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/reverse-linked-list/"><strong>206. Reverse Linked List</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><ul id="0b03947b-818f-4675-93d5-06e6994fb4aa" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/palindrome-linked-list/"><strong>234. Palindrome Linked List</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-teal"><strong>#Easy</strong></mark></span><div class="indented"></div></li></ul><p id="346ff71a-be92-45c3-8057-f7718d505419" class="">
+</p><p id="d2a94155-452a-404d-96e5-1ee9b468bee9" class="">Matrix:</p><ul id="1c107e88-1396-4171-af43-e469448681f0" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/sort-the-matrix-diagonally/"><strong>1329. Sort the Matrix Diagonally</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="35c0fdac-67a1-4c23-9a60-112ccada5060" class="">
+</p><p id="9859814a-46f8-4ebe-9b8f-19847e8518d8" class="">Нужно знать:</p><ul id="82de21b1-4260-462e-a151-09a32c475d01" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/longest-palindromic-substring/"><strong>5. Longest Palindromic Substring</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium (</strong></mark><strong><strong>Manacher&#x27;s Algorithm</strong></strong><mark class="highlight-orange"><strong>)</strong></mark></span><div class="indented"></div></li></ul><p id="7e53d070-7c0f-463a-8429-bd6778edf37f" class="">
+</p><p id="8d94380c-af79-4d47-a956-c635a2c132b8" class="">JavaScript</p><ul id="55eb7567-fb91-4285-abde-409edd2b22b0" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/design-an-atm-machine/"><strong>2241. Design an ATM Machine</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="ec89f1e6-2bd2-4c44-9fc0-05e968fa79e8" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/flatten-deeply-nested-array/"><strong>2625. Flatten Deeply Nested Array</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><ul id="b1e5a68d-4405-46a9-842e-d15e71187cf1" class="to-do-list"><li><div class="checkbox checkbox-off"></div> <span class="to-do-children-unchecked"><mark class="highlight-blue"><a href="https://leetcode.com/problems/event-emitter/"><strong>2694. Event Emitter</strong></a></mark><mark class="highlight-blue"><strong> </strong></mark><mark class="highlight-orange"><strong>#Medium</strong></mark></span><div class="indented"></div></li></ul><p id="42b2a390-5ce4-4b35-b3ae-749b5a580384" class="">
+</p></div></article><span class="sans" style="font-size:14px;padding-top:2em"></span></body></html>
