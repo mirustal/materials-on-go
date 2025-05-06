@@ -1,0 +1,20 @@
+1. Устройство процессоров
+https://i2hard.ru/publications/23285/
+
+2. Устройство конвейера процессора
+https://habr.com/ru/articles/182002/
+
+3. Когерентность кэша
+https://habr.com/ru/articles/183834/
+
+4. Монопроцессор
+http://scrutator.me/post/2014/11/01/cpu_memory_inter_uniprocessor.aspx
+
+5. Мультипроцессор
+http://scrutator.me/post/2015/04/05/cpu_memory_inter_multiprocessor.aspx
+
+6. MMU
+https://habr.com/ru/articles/211150/
+
+7. simd
+https://habr.com/ru/articles/440566/

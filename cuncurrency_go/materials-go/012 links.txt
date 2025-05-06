@@ -1,0 +1,16 @@
+1. Планировщик go
+https://habr.com/ru/articles/743266/
+
+2. epoll
+https://habr.com/ru/articles/416669/
+
+3. Как увеличивается стек горутин
+https://habr.com/ru/companies/otus/articles/586108/
+
+Ссылки на репозитории
+
+1. Ссылка на репозиторий
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/2_lesson_gorutines_and_scheduler
+
+2. Ссылка на реализацию планировщика
+https://github.com/VladimirBalun/system_programming/tree/master/golang_runtime

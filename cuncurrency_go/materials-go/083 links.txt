@@ -1,0 +1,1 @@
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/10_lesson_live_coding_practise

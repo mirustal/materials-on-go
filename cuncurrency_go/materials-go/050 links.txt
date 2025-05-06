@@ -1,0 +1,13 @@
+Методчика по операциям с каналами
+https://balun-team.yonote.ru/share/ef570ef3-3b8b-4e09-bf59-1344462d02d3/doc/operacii-s-kanalami-SbgC6WZBo6
+
+1. Анатомия каналов в Go
+https://habr.com/ru/articles/490336/
+
+2. Безопасная работа с каналами в Go
+
+https://medium.com/german-gorelkin/data-protected-by-confinement-ec6b7be401ea
+
+Ссылка на репозиторий
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/5_lesson_channels
+

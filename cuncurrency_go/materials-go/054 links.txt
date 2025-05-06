@@ -1,0 +1,22 @@
+1. Go concurrency patterns
+https://medium.com/@gopinathr143/go-concurrency-patterns-a-deep-dive-a2750f98a102
+
+2. Управление обработкой множественных ошибок
+https://habr.com/ru/companies/otus/articles/558404/
+
+3. Barriers in Golang
+https://medium.com/golangspec/reusable-barriers-in-golang-156db1f75d0b
+
+4. Такие удивительные семафоры
+https://habr.com/ru/articles/261273/
+
+5. Промисы в JavaScript
+https://learn.javascript.ru/promise
+
+6. Генераторы в Python
+https://habr.com/ru/articles/560300/
+
+
+Ссылка на репозиторий
+
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/6_lesson_channel_patterns

@@ -1,0 +1,11 @@
+1. Синхронизация в потокобезопасных контейнерах
+https://alexeykalina.github.io/technologies/synchronization.html
+
+2. ABA проблема
+https://habr.com/ru/articles/174369/
+
+
+Ссылка на репозиторий
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/8_lesson_sync_algorithms_and_lock_free
+
+https://balun-team.yonote.ru/share/22e06c3a-42dc-4f16-9bc6-7cc6adbd52b8/doc/domashnee-zadanie-4-2lUNDEk9XC

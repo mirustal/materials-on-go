@@ -1,16 +1,15 @@
-package code
+package main
 
-import (
-	"fmt"
-	"math"
-)
+import "fmt"
 
 func main() {
-	var signed int8 = math.MinInt8
-	signed++
+	slice := make([]int, 3, 4)
+	appendingSlice(slice[:1])
+	fmt.Println(slice, len(slice), cap(slice))
+}
 
-	var unsigned uint8 = math.MaxUint8
-	unsigned++
-
-	fmt.Println(signed, unsigned)
+func appendingSlice(slice []int) {
+	fmt.Printf("slice: %v len: %v, cap: %v", slice, len(slice), cap(slice))
+	slice = append(slice, 1)
+	fmt.Printf("\nslice: %v len: %v, cap: %v", slice, len(slice), cap(slice))
 }

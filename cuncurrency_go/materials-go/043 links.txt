@@ -1,0 +1,10 @@
+1. Аллокаторы памяти
+https://habr.com/ru/articles/505632/
+
+2. Read-write locks
+https://eli.thegreenplace.net/2019/implementing-reader-writer-locks/
+
+3. Sync.Map
+https://habr.com/ru/articles/338718/
+
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/4_lesson_sync_primitives_2

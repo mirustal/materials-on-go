@@ -1,0 +1,8 @@
+1. пакет context в Golang
+https://habr.com/ru/companies/nixys/articles/461723/
+
+2. пакет context в Golang - взгл€д профессионала
+https://habr.com/ru/companies/pt/articles/764850/
+
+—сылка на репозиторий
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/7_lesson_contexts_and_memory_barriers

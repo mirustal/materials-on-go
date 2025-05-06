@@ -1,0 +1,14 @@
+1. Танцы с мьютексами в Go
+https://habr.com/ru/articles/271789/
+
+2. Data race и race condition
+https://medium.com/german-gorelkin/race-8936927dba20
+
+3. Deadlocks, livelocks и starvation
+https://medium.com/german-gorelkin/deadlocks-livelocks-starvation-ccd22d06f3ae
+
+4. Mutex internals
+https://blog.stackademic.com/mutex-internals-in-golang-1624749f35a6
+
+Ссылка на репозиторий
+https://github.com/Balun-courses/concurrency_go/tree/master/lessons/3_lesson_sync_primitives_1

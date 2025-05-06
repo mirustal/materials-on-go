@@ -1,3 +1,3 @@
-module go-task
+module interview_go
 
-go 1.24.2
+go 1.23.4
